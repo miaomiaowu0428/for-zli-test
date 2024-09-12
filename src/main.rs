@@ -1,7 +1,6 @@
 use colored::Colorize;
 
 fn main() {
-    println!("{}" , "Project Running".blue())
-    
+    println!("1{}" , "Project Running".blue())
 }
 
