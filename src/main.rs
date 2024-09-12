@@ -1,6 +1,6 @@
-use zino::prelude::*;
+use colored::Colorize;
 
 fn main() {
-    zino::Cluster::boot().run();
+println!("{}" , "Project Running".blue())
 }
 
