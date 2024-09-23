@@ -4,3 +4,10 @@ refresh-interval = "10s"
 [remote]
 name = "origin"
 branch = "main"
+
+[acme]
+domain = ["qiumiaomiao.tech"]
+email = ["2268428576@qq.com"]
+cache = "./acme/catch"
+product-mode = false
+port = 6088
