@@ -1,5 +1,5 @@
 [zli-config]
-refresh-interval = "10s"
+refresh-interval = "10h"
 
 [remote]
 name = "origin"
