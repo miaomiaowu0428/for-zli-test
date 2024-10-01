@@ -6,7 +6,7 @@ name = "origin"
 branch = "main"
 
 [acme]
-domain = ["qiumiaomiao.tech"]
+domain = ["a.qiumiaomiao.tech"]
 email = ["2268428576@qq.com"]
 cache = "./acme/catch"
 product-mode = false
