@@ -10,3 +10,5 @@ domain = ["a.qiumiaomiao.tech"]
 email = ["2268428576@qq.com"]
 cache = "./acme/catch"
 product-mode = false
+listening-at = 80
+forward-to = 6080
