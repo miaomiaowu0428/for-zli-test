@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 colored = "2.1.0"
-zino = {version = "0.25.1", features = ["axum"]}
+rocket = "0.5.1"
