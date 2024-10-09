@@ -11,7 +11,7 @@ domain = [
     "www.qiumiaomiao.tech"
 ]
 email = ["2268428576@qq.com"]
-cache = "./acme/cache"
-product-mode = false
+cache = "./acme/product/cache"
+product-mode = true
 listening-at = 443
 forward-to = 6080
