@@ -1,5 +1,8 @@
 use colored::Colorize;
 
+use std::path::PathBuf;
+use rocket::fs::NamedFile;
+
 
 
 #[macro_use] extern crate rocket;
@@ -9,6 +12,11 @@ fn index() -> &'static str {
     "Hello, world!"
 }
 
+#[get("/<path..>")]
+async fn files(path: PathBuf) -> Option<NamedFile> {
+    NamedFile::open(path).await.ok()
+}
+
 #[launch]
 fn rocket() -> _ {
     println!("3{}" , "Project Running".blue());
@@ -16,5 +24,5 @@ fn rocket() -> _ {
         .merge(("address", "0.0.0.0"))
         .merge(("port",6080));
 
-    rocket::custom(figment).mount("/", routes![index])
+    rocket::custom(figment).mount("/", routes![index, files])
 }
