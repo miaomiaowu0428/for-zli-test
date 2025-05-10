@@ -19,7 +19,7 @@ async fn files(path: PathBuf) -> Option<NamedFile> {
 
 #[launch]
 fn rocket() -> _ {
-    println!("99{}" , "Project Running".blue());
+    println!("100{}" , "Project Running".blue());
     let figment = rocket::Config::figment()
         .merge(("address", "0.0.0.0"))
         .merge(("port",6080));
